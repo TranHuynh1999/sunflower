@@ -5,7 +5,13 @@ import { fundraisingAppeals } from '@/data/mockData';
 
 const formatMoney = (value: number) => value.toLocaleString('vi-VN') + ' ₫';
 
-export default async function AppealDetailPage({ params }: { params: Promise<{ id: string }> }) {
+export async function generateStaticParams() {
+  return fundraisingAppeals.map((appeal) => ({
+    id: appeal.id,
+  }));
+}
+
+export default async function AppealDetailPage({ params }: { params: { id: string } }) {
   const { id } = await params;
   const appeal = fundraisingAppeals.find((item) => item.id === id);
 

@@ -3,8 +3,14 @@ import DonationTable from '@/components/DonationTable';
 import { activities } from '@/data/mockData';
 
 type TransparencyPageProps = {
-  params: Promise<{ id: string }>;
+  params: { id: string };
 };
+
+export async function generateStaticParams() {
+  return activities.map((activity) => ({
+    id: activity.id,
+  }));
+}
 
 function parseVnd(value: string) {
   return Number(value.replace(/\D/g, '')) || 0;

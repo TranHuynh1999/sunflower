@@ -3,10 +3,16 @@ import ActivityDetail from '@/components/ActivityDetail';
 import { activities } from '@/data/mockData';
 
 type ActivityPageProps = {
-  params: Promise<{
+  params: {
     id: string;
-  }>;
+  };
 };
+
+export async function generateStaticParams() {
+  return activities.map((activity) => ({
+    id: activity.id,
+  }));
+}
 
 export default async function ActivityPage({ params }: ActivityPageProps) {
   const { id } = await params;
