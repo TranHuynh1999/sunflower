@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node -e \"require('fs').writeFileSync('out/.nojekyll', '')\"",
     "start": "next start",
     "lint": "eslint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out -no-cache"
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "clsx": "^2.1.1",

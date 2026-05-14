@@ -55,7 +55,7 @@ export default function DonationModal() {
           <div className="relative aspect-square w-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-100 p-4">
             <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-yellow-300 via-transparent to-green-400" />
             <div className="relative h-full w-full">
-              <Image src="/maqr.png" alt="VietQR code" fill className="object-contain" />
+              <Image src="/sunflower/maqr.png" alt="VietQR code" fill className="object-contain" />
             </div>
           </div>
         </div>

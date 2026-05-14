@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -7,7 +8,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3">
             <div className="relative h-10 w-10 overflow-hidden rounded-2xl border border-yellow-200 bg-white shadow-sm">
-              <Image src="/logo.png" alt="Logo Sunflower" fill className="object-contain" />
+              <Image src="/sunflower/logo.png" alt="Logo Sunflower" fill className="object-contain" />
             </div>
             <span className="text-2xl font-bold text-gray-900">Sunflower</span>
           </div>
@@ -15,9 +16,9 @@ export default function Navbar() {
             <a href="#about" className="text-gray-700 hover:text-yellow-600 transition-colors">
               Về Chúng Tôi
             </a>
-            <a href="/activities" className="text-gray-700 hover:text-yellow-600 transition-colors">
+            <Link href="/activities" className="text-gray-700 hover:text-yellow-600 transition-colors">
               Hoạt Động
-            </a>
+            </Link>
             <a href="#transparency" className="text-gray-700 hover:text-yellow-600 transition-colors">
               Minh Bạch
             </a>

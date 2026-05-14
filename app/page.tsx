@@ -29,7 +29,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
           <div className="flex items-center gap-3">
             <div className="relative h-12 w-12 overflow-hidden rounded-2xl border border-yellow-200 bg-white shadow-sm">
-              <Image src="/logo.png" alt="Logo Sunflower" fill className="object-contain" />
+              <Image src="/sunflower/logo.png" alt="Logo Sunflower" fill className="object-contain" />
             </div>
             <div>
               <span className="text-2xl font-bold text-yellow-600 font-heading">Sunflower</span>
@@ -258,7 +258,7 @@ export default function Home() {
                 <div className="rounded-3xl bg-yellow-50 p-4">
                   <p className="text-sm font-semibold text-gray-900">Mã VietQR</p>
                   <div className="mt-3 relative aspect-square w-full overflow-hidden  rounded-2xl border border-gray-200 bg-gray-45">
-                    <Image src="/maqr.png" alt="VietQR code" fill className="object-contain" />
+                    <Image src="/sunflower/maqr.png" alt="VietQR code" fill className="object-contain" />
                   </div>
                   <p className="mt-3 text-xs text-gray-600">Quét mã để chuyển khoản nhanh</p>
                 </div>

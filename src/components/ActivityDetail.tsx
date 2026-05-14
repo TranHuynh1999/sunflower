@@ -200,7 +200,7 @@ export default function ActivityDetail({ activity }: ActivityDetailProps) {
               </div>
               <div className="mt-6 rounded-3xl bg-white p-6 text-center">
                 <div className="relative mx-auto mb-4 h-36 w-36 overflow-hidden rounded-3xl border border-gray-200 bg-gray-100">
-                  <Image src="/maqr.png" alt="VietQR code" fill className="object-contain" />
+                  <Image src="/sunflower/maqr.png" alt="VietQR code" fill className="object-contain" />
                 </div>
                 <p className="text-sm text-gray-600">Quét mã VietQR để chuyển khoản nhanh và chính xác.</p>
               </div>

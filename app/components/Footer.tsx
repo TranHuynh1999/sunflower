@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="relative h-12 w-12 overflow-hidden rounded-3xl border border-yellow-300 bg-white shadow-sm">
-              <Image src="/logo.png" alt="Logo Sunflower" fill className="object-contain" />
+              <Image src="/sunflower/logo.png" alt="Logo Sunflower" fill className="object-contain" />
             </div>
             <div>
               <p className="text-xl font-semibold text-white font-heading">Nhóm Thiện Nguyện Hoa Hướng Dương</p>
